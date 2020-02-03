@@ -217,6 +217,12 @@ footer{
         margin-right:0px;
         padding-top:30px;
     }
+
+    @media(max-width:500px){
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
     
     @media(max-width:400px){
         display:flex;
@@ -231,6 +237,12 @@ footer{
         justify-content: flex-end;
         text-align: center;
         margin-left:50px;
+
+        @media(max-width:500px){
+            text-align:justify;
+            margin-left:20px;
+            padding:0px;
+        }
 
         @media(max-width:400px){
             text-align:center;
@@ -249,6 +261,11 @@ footer{
         @media(max-width:800px){
             width:60%;
         }
+        @media(max-width:500px){
+            display:flex;
+            flex-direction:column;
+            width:30%;
+        }
         @media(max-width:400px){
             width:30%;
             display:flex;
@@ -264,6 +281,17 @@ footer{
         font-size: 3rem;
         cursor: pointer;
         margin: .5rem;
+
+        &:hover{
+            color:#CAA767;
+            border-top:1px dashed #CAA767;
+            border-bottom:1px dashed #CAA767; 
+        }
+
+        @media(max-width:400px){
+            justify-content:center;
+            width: 55%;
+        }
     }
     
 }
