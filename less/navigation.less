@@ -6,6 +6,10 @@ nav {
         .flex(space-between, center);
         padding: 1.5% 0;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         h2 {
             color: @gold;
         }
@@ -13,6 +17,12 @@ nav {
         .links {
             .flex(space-between, center);
             width: 35%;
+
+            @media @phone {
+                margin-top: 4%;
+                margin-bottom: 1%;
+                width: 100%;
+            }
 
             a {
                 text-decoration: none;

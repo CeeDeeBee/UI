@@ -6,12 +6,24 @@
         .flex(space-around, center);
         padding: 4% 0;
 
+        @media @tablet {
+            flex-direction: column-reverse;
+        }
+
         .text {
             text-align: center;
+
+            @media @large-tablet {
+                padding: 0 4%;
+            }
 
             .slogan {
                 display: inline;
                 font-size: 4.5rem;
+
+                @media @phone {
+                    width: 100%;
+                }
             }
 
             h1 {
@@ -48,6 +60,7 @@
 
         img {
             height: 500px;
+            max-width: 100%;
         }
     }
 }

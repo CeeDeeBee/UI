@@ -183,6 +183,11 @@ nav .container {
   align-items: center;
   padding: 1.5% 0;
 }
+@media (max-width: 500px) {
+  nav .container {
+    flex-direction: column;
+  }
+}
 nav .container h2 {
   color: #CAA767;
 }
@@ -191,6 +196,13 @@ nav .container .links {
   justify-content: space-between;
   align-items: center;
   width: 35%;
+}
+@media (max-width: 500px) {
+  nav .container .links {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    width: 100%;
+  }
 }
 nav .container .links a {
   text-decoration: none;
@@ -208,12 +220,27 @@ nav .container .links a {
   align-items: center;
   padding: 4% 0;
 }
+@media (max-width: 800px) {
+  .cta .container {
+    flex-direction: column-reverse;
+  }
+}
 .cta .container .text {
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .cta .container .text {
+    padding: 0 4%;
+  }
 }
 .cta .container .text .slogan {
   display: inline;
   font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .cta .container .text .slogan {
+    width: 100%;
+  }
 }
 .cta .container .text h1 {
   display: inline;
@@ -243,4 +270,5 @@ nav .container .links a {
 }
 .cta .container img {
   height: 500px;
+  max-width: 100%;
 }
