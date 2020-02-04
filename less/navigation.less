@@ -1,0 +1,121 @@
+.topnav{
+    display:flex;
+    flex-wrap:wrap;
+    color:#CAA767;
+    justify-content: space-between;
+    background-color: #213159;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    .fonts(5rem, @heading-font);
+
+    @media @tablet{
+        display:flex;
+        justify-content:space-evenly;
+        width:100%;
+        margin:0;
+    }
+    @media @phone {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        width:100%;
+        margin:0;
+    } // closes media 500
+    
+    @media @sm-phone{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+    }//closes media 400
+
+    .toplogo{
+        width: 20rem;
+        padding: 0% 1%;
+        justify-content: flex-end;
+        text-align: center;
+        margin-left:50px;
+        .fonts(5rem, @heading-font);
+        
+        @media @tablet{
+            margin-left:0px;
+            justify-content:flex-start;
+            font-size:5rem;
+        }
+        @media @phone{
+            text-align:center;
+            padding:0px;
+            width:100%;
+            justify-content:center;
+        } // closes media 500
+
+        @media @sm-phone{
+            text-align:center;
+            margin-bottom:2rem;
+            justify-content:center;
+
+        } // closes media 500
+    } //closes toplogo
+
+    .links2{
+        width:60rem;
+        align-content:center;
+        .fonts(5rem, @heading-font);
+
+        @media @lg-tablet {
+            margin-left:0px;
+            margin-right:0px;
+        }//closes media 1000
+
+        @media @tablet{
+            width:80%;
+            padding-top:0px;
+            padding-bottom:0px;
+            justify-content:center;
+            
+        } // closes media 800
+
+        @media @phone{
+            display:flex;
+            width:100%;
+            justify-content:center;
+
+        }//closes media 500
+
+        @media @sm-phone{
+            width:100%;
+            justify-content:center;
+            flex-direction:column;
+            align-items:center;
+            padding:0;
+
+        }//closes media 400
+
+    }//closes .links
+    
+    .links2 a{
+        text-decoration: none;
+        color: white;
+        padding: 0% 4%;
+        cursor: pointer;
+        margin: .5rem;
+
+        .fonts(3rem, @heading-font);
+
+        &:hover{
+            color:#CAA767;
+            border-top:1px dashed #CAA767;
+            border-bottom:1px dashed #CAA767; 
+        }//closes hover
+
+        @media @sm-phone{
+            justify-content:center;
+            width: 25%;
+            align-items:center;
+            margin-top:1.5rem;
+        }//closes media 400
+    } //closes links a
+    
+} //closes footer

@@ -2,6 +2,86 @@ html{
     font-size: 62.5%;
 }//closes html
 
+#navandheader{
+    background-color: #213159;
+    background-image: linear-gradient(180deg, #213159 12%, #8ec5fc 50%, #caa767 100%);
+    margin-bottom: 2%;
+
+    @media @phone{
+        margin-bottom:5%;
+    }
+
+    .droomit{
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+
+        h1{
+            .fonts(5.5rem, @heading-font);
+            text-align:center;
+            color:white;
+            margin-bottom:4rem;
+
+            @media @phone{
+                width:100%;
+            }
+
+        }
+        .logoimg{
+            width: 30%;
+            padding:6rem 6rem;
+            border-radius: 13rem;
+            @media @phone{
+                width:40%;
+            }
+            
+        }
+
+        .letsgo{
+            padding: 1rem 10rem;
+            border: none;
+        // margin: 1rem 2rem;
+            border-radius: 5rem;
+            background: #213159;
+            margin-left:5rem;
+        .fonts(3rem, @main-font);
+            color: #CAA767;
+            margin-left:10rem;
+            
+            &:hover{
+                color:#213159;
+                background-color:#CAA767;
+                cursor:pointer;
+            }//closes hover
+
+            @media @lg-tablet {
+                margin-left:4rem;
+            }
+            @media @tablet{
+                padding: 1rem 5rem;
+            }
+            @media @phone{
+                margin-left:10rem;
+            }
+            @media @sm-phone{
+                margin-left:5rem;
+                
+            }
+        }//closes lets go
+
+        .h1andbutton{
+            width:40%;
+            margin:5rem;
+            justify-content:center;
+
+            @media @phone {
+                width:100%;
+            }
+        }
+    }
+}
+
 .section-one{
     background-color: #8EC5FC;
     justify-content: space-evenly;
@@ -41,6 +121,10 @@ html{
             width:90%;
             margin:20px;
         }//closes media 800
+        
+        @media @phone{
+            margin:0px;
+        }
 
         @media @sm-phone{
             font-size:3rem;
@@ -144,7 +228,8 @@ html{
 
 .section-three{
     background-color: #213159;
-    background-image: linear-gradient(90deg, #213159 0%, #8ec5fc 100%);
+    background-image: linear-gradient(90deg, #213159 12%, #8ec5fc 50%, #213159 100%);
+
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -178,6 +263,14 @@ html{
             background-color:#CAA767;
             cursor:pointer;
         }//closes hover
+
+        @media @tablet{
+            padding: 1rem 5rem;
+        }
+        @media @sm-phone{
+            margin-left:0rem;     
+        } 
+        
     }//closes lets go
 }//closes section three
 
