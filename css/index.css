@@ -418,23 +418,3 @@ html {
   background-color: #CAA767;
   cursor: pointer;
 }
-html {
-  font-size: 62.5%;
-  font-family: 'Dancing Script', cursive;
-}
-.aboutteam {
-  background-color: #8ec5fc;
-  background-image: linear-gradient(0deg, #8ec5fc 25%, #e9d896 100%);
-}
-.peopleboxes {
-  display: flex;
-  width: 90%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  font-size: 2rem;
-  margin-bottom: 2%;
-}
-.meet {
-  border: 10px solid red;
-}
