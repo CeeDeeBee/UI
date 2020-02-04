@@ -1,7 +1,5 @@
 html{
     font-size: 62.5%;
-    font-family: 'Dancing Script', cursive;
-    
 }//closes html
 
 .section-one{
@@ -12,19 +10,19 @@ html{
     align-items: center;
     margin-bottom: 2%;
 
-    @media(max-width:800px){
+    @media @tablet{
         display:flex;
         flex-direction:column;
         margin-bottom: 5%;
     }//closes 800 media
 
-    @media(max-width:400px){
+    @media @sm-phone {
         margin-bottom:10%;;
     }//closes 400 media
     .what{
-        font-size:6rem;
+        .fonts(6rem, @heading-font);
 
-        @media(max-width:400px){
+        @media @sm-phone {
             font-size:5rem;
         }// closes media 400
     }//closes .what
@@ -33,17 +31,18 @@ html{
         width:40%;
         text-align:center;
         padding:4%;
-        font-size:3rem;
         line-height:1.5;
         color: #213159;
+
+        .fonts(3rem, @main-font);
         
 
-        @media(max-width:800px){
+        @media @tablet{
             width:90%;
             margin:20px;
         }//closes media 800
 
-        @media(max-width:400px){
+        @media @sm-phone{
             font-size:3rem;
             padding:0px;
            
@@ -57,14 +56,14 @@ html{
         padding:8rem 10rem;
         border-radius: 13rem;
         
-        @media(max-width:800px){
+        @media @tablet {
             width:40%;
             padding:0;
             border-radius: 5rem;
             margin-top:30px;
         } //closes media 800
 
-        @media(max-width:400px){
+        @media @sm-phone{
             width:50%;
             border-radius: 5rem;
         } // closes media 400
@@ -88,14 +87,14 @@ html{
         margin: 0 auto;
         padding: 2%;
         color: #213159;
-        font-size:6rem;
+        .fonts(6rem, @heading-font);
     } // closes .how
 
     p {
-        font-size: 3rem;
         line-height: 1.4;
         padding-top: 4rem;
         color: #CAA767;
+        .fonts(3rem, @main-font);
     } // closes p
 
     .boxes {
@@ -104,10 +103,10 @@ html{
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
-        font-size: 2rem;
+        //font-size: 2rem;
         margin-bottom: 2%;
 
-        @media(max-width:800px){
+        @media @tablet{
             display:flex;
             flex-direction:column;
             
@@ -118,9 +117,9 @@ html{
             margin-bottom: 2rem;
             color: white;
             padding: 1rem;
-            font-size: 5rem;
             text-align: center;
             border-radius: 20rem;
+            .fonts(5rem, @heading-font);
         } // closes h3
    
         .box1, .box2, .box3{
@@ -132,7 +131,7 @@ html{
             text-align: center;
             border-radius: 2rem;
 
-            @media(max-width:800px){
+            @media @tablet{
                 width:90%;
                 margin-top:20px;
                 margin-bottom:20px;
@@ -153,16 +152,16 @@ html{
     margin-bottom: 2%;
     padding: 4rem;
 
-    @media(max-width:800px){
+    @media @tablet{
         margin-bottom:5%;
     } //closes media 800
-    @media(max-width:400px){
+    @media @sm-phone{
         margin-bottom:10%;
     }   //closes media 400
 
     .started{
-        font-size:5rem;
         color: #CAA767;
+        .fonts(5rem, @heading-font);
     } //closes started
 
     .letsgo{
@@ -171,8 +170,7 @@ html{
         margin: 1rem 2rem;
         border-radius: 5rem;
         background: #213159;
-        font-size: 3rem;
-        font-family: 'Alata', sans-serif;
+       .fonts(3rem, @main-font);
         color: #CAA767;
         
         &:hover{

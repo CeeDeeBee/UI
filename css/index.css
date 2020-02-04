@@ -246,7 +246,6 @@ footer .links a:hover {
 }
 html {
   font-size: 62.5%;
-  font-family: 'Dancing Script', cursive;
 }
 .section-one {
   background-color: #8EC5FC;
@@ -256,22 +255,23 @@ html {
   align-items: center;
   margin-bottom: 2%;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-one {
     display: flex;
     flex-direction: column;
     margin-bottom: 5%;
   }
 }
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .section-one {
     margin-bottom: 10%;
   }
 }
 .section-one .what {
   font-size: 6rem;
+  font-family: 'Dancing Script', cursive;
 }
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .section-one .what {
     font-size: 5rem;
   }
@@ -280,17 +280,18 @@ html {
   width: 40%;
   text-align: center;
   padding: 4%;
-  font-size: 3rem;
   line-height: 1.5;
   color: #213159;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-one .one-text {
     width: 90%;
     margin: 20px;
   }
 }
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .section-one .one-text {
     font-size: 3rem;
     padding: 0px;
@@ -302,7 +303,7 @@ html {
   padding: 8rem 10rem;
   border-radius: 13rem;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-one .section-one-image {
     width: 40%;
     padding: 0;
@@ -310,7 +311,7 @@ html {
     margin-top: 30px;
   }
 }
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .section-one .section-one-image {
     width: 50%;
     border-radius: 5rem;
@@ -332,12 +333,14 @@ html {
   padding: 2%;
   color: #213159;
   font-size: 6rem;
+  font-family: 'Dancing Script', cursive;
 }
 .section-two p {
-  font-size: 3rem;
   line-height: 1.4;
   padding-top: 4rem;
   color: #CAA767;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .section-two .boxes {
   display: flex;
@@ -345,10 +348,9 @@ html {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
-  font-size: 2rem;
   margin-bottom: 2%;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-two .boxes {
     display: flex;
     flex-direction: column;
@@ -359,9 +361,10 @@ html {
   margin-bottom: 2rem;
   color: white;
   padding: 1rem;
-  font-size: 5rem;
   text-align: center;
   border-radius: 20rem;
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
 }
 .section-two .boxes .box1,
 .section-two .boxes .box2,
@@ -374,7 +377,7 @@ html {
   text-align: center;
   border-radius: 2rem;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-two .boxes .box1,
   .section-two .boxes .box2,
   .section-two .boxes .box3 {
@@ -393,19 +396,20 @@ html {
   margin-bottom: 2%;
   padding: 4rem;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .section-three {
     margin-bottom: 5%;
   }
 }
-@media (max-width: 400px) {
+@media ( max-width:400px ) {
   .section-three {
     margin-bottom: 10%;
   }
 }
 .section-three .started {
-  font-size: 5rem;
   color: #CAA767;
+  font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
 }
 .section-three .letsgo {
   padding: 1rem 10rem;
@@ -414,7 +418,7 @@ html {
   border-radius: 5rem;
   background: #213159;
   font-size: 3rem;
-  font-family: 'Alata', sans-serif;
+  font-family: 'Indie Flower', cursive;
   color: #CAA767;
 }
 .section-three .letsgo:hover {
@@ -424,26 +428,26 @@ html {
 }
 html {
   font-size: 62.5%;
-  font-family: 'Dancing Script', cursive;
 }
 .aboutteam {
   background-color: #213159;
-  background-image: linear-gradient(0deg, #213159 25%, #caa767 100%);
+  background-image: linear-gradient(180deg, #213159 12%, #8ec5fc 50%, #caa767 100%);
 }
 .aboutteam .sec-one {
   display: flex;
   flex-direction: row;
-  font-size: 3rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .aboutteam .sec-one .aboutimg {
   width: 35%;
   padding: 8rem 10rem;
   border-radius: 15rem;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .aboutteam .sec-one .aboutimg {
     display: none;
   }
@@ -451,20 +455,22 @@ html {
 .aboutteam .sec-one .meetthe {
   display: flex;
   flex-direction: column;
-  font-size: 4rem;
   width: 35%;
   text-align: center;
   padding: 4%;
   line-height: 1.5;
-  color: white;
+  color: #8ec5fc;
+  font-size: 4rem;
+  font-family: 'Indie Flower', cursive;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .aboutteam .sec-one .meetthe {
     width: 80%;
   }
 }
 .aboutteam .sec-one .meet {
   font-size: 5rem;
+  font-family: 'Dancing Script', cursive;
 }
 .aboutteam .peopleboxes {
   padding: 2rem;
@@ -478,10 +484,11 @@ html {
   margin-bottom: 2%;
 }
 .aboutteam .peopleboxes p {
-  font-size: 3rem;
   line-height: 1.4;
   padding-top: 2rem;
-  color: #182D42;
+  color: #8ec5fc;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
 }
 .aboutteam .peopleboxes .peopleimgs {
   width: 90%;
@@ -492,14 +499,16 @@ html {
   margin-bottom: 2rem;
   color: white;
   padding: 1rem;
-  font-size: 3rem;
   text-align: center;
   border-radius: 15rem;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
 }
 .aboutteam .peopleboxes h4 {
-  color: #182D42;
+  color: #CAA767;
   padding: 1rem;
   font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
 }
 .aboutteam .peopleboxes .JShep,
 .aboutteam .peopleboxes .JDess,
@@ -519,7 +528,7 @@ html {
   text-align: center;
   border-radius: 2rem;
 }
-@media (max-width: 800px) {
+@media ( max-width:800px ) {
   .aboutteam .peopleboxes .JShep,
   .aboutteam .peopleboxes .JDess,
   .aboutteam .peopleboxes .PresM,
@@ -531,4 +540,18 @@ html {
   .aboutteam .peopleboxes .ColinB {
     width: 80%;
   }
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v13/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup5.ttf) format('truetype');
 }
