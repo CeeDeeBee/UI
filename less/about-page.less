@@ -3,20 +3,111 @@ html{
     font-family: 'Dancing Script', cursive;
 }
 
+
+
 .aboutteam{
-    background-color: #8ec5fc;
-    background-image: linear-gradient(0deg, #8ec5fc 25%, #e9d896 100%); 
+    background-color: #213159;
+    background-image: linear-gradient(0deg, #213159 25%, #caa767 100%);
+    
+    .sec-one{
+        display:flex;
+        flex-direction:row;
+        font-size: 3rem;
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        align-items:center;
+
+        // @media(max-width:800px){
+        //     width:80%;
+
+        // }
+
+        .aboutimg{
+            width:35%;
+            padding: 8rem 10rem;
+            border-radius: 15rem;
+
+            @media(max-width:800px){
+                display:none;
+            }
+        }
+
+        .meetthe{
+            display:flex;
+            flex-direction:column;
+            font-size:4rem;
+            width:35%;
+            text-align:center;
+            padding:4%;
+            line-height:1.5;
+            color:white;
+
+            @media(max-width:800px){
+                width:80%;
+            }
+        }
+
+        .meet{
+            font-size:5rem;
+        }
+    }//closes sec-one
+   
+   .peopleboxes{
+        padding: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-bottom: 2%;
+
+        @media(max-width:800px){
+
+        }
+
+        p{
+            font-size: 3rem;
+            line-height:1.4;
+            padding-top: 2rem;
+            color:#182D42;
+        }
+        .peopleimgs{
+            width:90%;
+            border-radius:10px;
+        }
+
+        h3 {
+            background-color: #213159;
+            margin-bottom: 2rem;
+            color: white;
+            padding: 1rem;
+            font-size: 3rem;
+            text-align: center;
+            border-radius: 15rem; 
+        }
+        h4 {
+            color:#182D42;
+            padding:1rem;
+            font-size: 3rem;
+            
+        }
+        .JShep, .JDess, .PresM, .ShawnD, .KatP, .AAnd, .TristD, .me, .ColinB{
+            width: 20%;
+            padding: 5%;
+            margin-bottom: 5%;
+            background-color: white;
+            align-items: center;
+            color: #213159;
+            text-align: center;
+            border-radius: 2rem; 
+
+            @media(max-width:800px){
+                width:80%;
+            }
+        }
+    } 
+
 }
-
-.peopleboxes{
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    font-size: 50rem;
-    margin-bottom: 2%;
-
-}
-
 

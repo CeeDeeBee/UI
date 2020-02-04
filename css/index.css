@@ -156,6 +156,7 @@ footer {
     justify-content: center;
     margin-left: 0px;
     margin-right: 0px;
+    padding-bottom: 30px;
     padding-top: 30px;
   }
 }
@@ -195,6 +196,7 @@ footer .footlogo {
 }
 footer .links {
   width: 60rem;
+  align-content: center;
 }
 @media (max-width: 1000px) {
   footer .links {
@@ -205,6 +207,8 @@ footer .links {
 @media (max-width: 800px) {
   footer .links {
     width: 60%;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -417,4 +421,114 @@ html {
   color: #213159;
   background-color: #CAA767;
   cursor: pointer;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Dancing Script', cursive;
+}
+.aboutteam {
+  background-color: #213159;
+  background-image: linear-gradient(0deg, #213159 25%, #caa767 100%);
+}
+.aboutteam .sec-one {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.aboutteam .sec-one .aboutimg {
+  width: 35%;
+  padding: 8rem 10rem;
+  border-radius: 15rem;
+}
+@media (max-width: 800px) {
+  .aboutteam .sec-one .aboutimg {
+    display: none;
+  }
+}
+.aboutteam .sec-one .meetthe {
+  display: flex;
+  flex-direction: column;
+  font-size: 4rem;
+  width: 35%;
+  text-align: center;
+  padding: 4%;
+  line-height: 1.5;
+  color: white;
+}
+@media (max-width: 800px) {
+  .aboutteam .sec-one .meetthe {
+    width: 80%;
+  }
+}
+.aboutteam .sec-one .meet {
+  font-size: 5rem;
+}
+.aboutteam .peopleboxes {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+.aboutteam .peopleboxes p {
+  font-size: 3rem;
+  line-height: 1.4;
+  padding-top: 2rem;
+  color: #182D42;
+}
+.aboutteam .peopleboxes .peopleimgs {
+  width: 90%;
+  border-radius: 10px;
+}
+.aboutteam .peopleboxes h3 {
+  background-color: #213159;
+  margin-bottom: 2rem;
+  color: white;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 15rem;
+}
+.aboutteam .peopleboxes h4 {
+  color: #182D42;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.aboutteam .peopleboxes .JShep,
+.aboutteam .peopleboxes .JDess,
+.aboutteam .peopleboxes .PresM,
+.aboutteam .peopleboxes .ShawnD,
+.aboutteam .peopleboxes .KatP,
+.aboutteam .peopleboxes .AAnd,
+.aboutteam .peopleboxes .TristD,
+.aboutteam .peopleboxes .me,
+.aboutteam .peopleboxes .ColinB {
+  width: 20%;
+  padding: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  align-items: center;
+  color: #213159;
+  text-align: center;
+  border-radius: 2rem;
+}
+@media (max-width: 800px) {
+  .aboutteam .peopleboxes .JShep,
+  .aboutteam .peopleboxes .JDess,
+  .aboutteam .peopleboxes .PresM,
+  .aboutteam .peopleboxes .ShawnD,
+  .aboutteam .peopleboxes .KatP,
+  .aboutteam .peopleboxes .AAnd,
+  .aboutteam .peopleboxes .TristD,
+  .aboutteam .peopleboxes .me,
+  .aboutteam .peopleboxes .ColinB {
+    width: 80%;
+  }
 }
