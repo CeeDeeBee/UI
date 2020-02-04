@@ -197,6 +197,11 @@ nav .container .links {
   align-items: center;
   width: 35%;
 }
+@media (max-width: 800px) {
+  nav .container .links {
+    width: 50%;
+  }
+}
 @media (max-width: 500px) {
   nav .container .links {
     margin-top: 4%;
@@ -240,6 +245,7 @@ nav .container .links a {
 @media (max-width: 500px) {
   .cta .container .text .slogan {
     width: 100%;
+    font-size: 3rem;
   }
 }
 .cta .container .text h1 {
@@ -247,10 +253,20 @@ nav .container .links a {
   color: #CAA767;
   padding: 0 7px;
 }
+@media (max-width: 500px) {
+  .cta .container .text h1 {
+    font-size: 4rem;
+  }
+}
 .cta .container .text .sub-slogan {
   padding: 4% 0;
   margin-bottom: 6%;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .cta .container .text .sub-slogan {
+    font-size: 2rem;
+  }
 }
 .cta .container .text .sign-up {
   margin: 0 auto;
@@ -271,4 +287,14 @@ nav .container .links a {
 .cta .container img {
   height: 500px;
   max-width: 100%;
+}
+@media (max-width: 800px) {
+  .cta .container img {
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .cta .container img {
+    height: 300px;
+  }
 }

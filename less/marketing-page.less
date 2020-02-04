@@ -23,6 +23,7 @@
 
                 @media @phone {
                     width: 100%;
+                    font-size: 3rem;
                 }
             }
 
@@ -30,12 +31,20 @@
                 display: inline;
                 color: @gold;
                 padding: 0 7px;
+
+                @media @phone {
+                    font-size: 4rem;
+                }
             }
 
             .sub-slogan {
                 padding: 4% 0;
                 margin-bottom: 6%;
                 font-size: 2.5rem;
+
+                @media @phone {
+                    font-size: 2rem;
+                }
             }
 
             .sign-up {
@@ -61,6 +70,14 @@
         img {
             height: 500px;
             max-width: 100%;
+
+            @media @tablet {
+                height: 400px;
+            }
+
+            @media @phone {
+                height: 300px;
+            }
         }
     }
 }
