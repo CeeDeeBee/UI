@@ -165,11 +165,14 @@ h2 {
   font-size: 4rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+img {
+  max-width: 100%;
 }
 .container {
   width: 80%;
@@ -350,7 +353,6 @@ footer .container .copyright p {
 }
 .cta .container img {
   height: 500px;
-  max-width: 100%;
 }
 @media (max-width: 800px) {
   .cta .container img {
@@ -361,4 +363,68 @@ footer .container .copyright p {
   .cta .container img {
     height: 300px;
   }
+}
+@media (max-width: 800px) {
+  .how {
+    margin-top: 4%;
+  }
+}
+.how h2 {
+  background-color: #182D42;
+  text-align: center;
+  padding: 2% 0;
+}
+@media (max-width: 800px) {
+  .how h2 {
+    padding: 3% 0;
+  }
+}
+.how .how-one {
+  background-color: #C47846;
+}
+.how .how-two {
+  background-color: #A6A462;
+}
+.how .how-two .how-content {
+  flex-direction: row-reverse;
+}
+.how .how-three {
+  background-color: #B8CCC7;
+}
+.how .how-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .how .how-div {
+    margin: 6% 0;
+    padding: 4% 0;
+  }
+}
+.how .how-div .how-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .how .how-div .how-content {
+    flex-direction: column-reverse;
+  }
+}
+.how .how-div .how-content p {
+  width: 50%;
+  font-size: 2.2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .how .how-div .how-content p {
+    width: 100%;
+    padding: 3% 0;
+  }
+}
+.how .how-div .how-content img {
+  height: 400px;
 }

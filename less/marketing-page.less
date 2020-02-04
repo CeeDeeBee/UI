@@ -68,7 +68,6 @@
 
         img {
             height: 500px;
-            max-width: 100%;
 
             @media @tablet {
                 height: 400px;
@@ -81,6 +80,71 @@
     }
 }
 
-// Middle section 1
+// How it works section
+.how {
+    @media @tablet {
+        margin-top: 4%;
+    }
+
+    h2 {
+        background-color: @dark-blue;
+        text-align: center;
+        padding: 2% 0;
+
+        @media @tablet {
+            padding: 3% 0;
+        }
+    }
+
+    .how-one {
+        background-color: #C47846;
+    }
+
+    .how-two {
+        background-color: #A6A462;
+
+        .how-content {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .how-three {
+        background-color: #B8CCC7;
+    }
+
+    .how-div {
+        .flex(center, center);
+        margin: 3% 0;
+        padding: 2% 0;
+
+        @media @phone {
+            margin: 6% 0;
+            padding: 4% 0;
+        }
+
+        .how-content {
+            .flex(space-between, center);
+
+            @media @phone {
+                flex-direction: column-reverse;
+            }
+
+            p {
+                width: 50%;
+                font-size: 2.2rem;
+                text-align: center;
+
+                @media @tablet {
+                    width: 100%;
+                    padding: 3% 0;
+                }
+            }
+
+            img {
+                height: 400px;
+            }
+        }
+    }
+}
 
 // Middle section 2
