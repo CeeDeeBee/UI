@@ -3,38 +3,11 @@
     .flex(center, center);
 
     .container {
-        .flex(space-around, center);
-        padding: 4% 0;
-
-        @media @tablet {
-            flex-direction: column-reverse;
-        }
+        .header-container();
 
         .text {
             text-align: center;
-
-            @media @large-tablet {
-                padding: 0 4%;
-            }
-
-            .slogan {
-                display: inline;
-                font-size: 4.5rem;
-
-                @media @phone {
-                    width: 100%;
-                    font-size: 3rem;
-                }
-            }
-
-            h1 {
-                display: inline;
-                padding: 0 7px;
-
-                @media @phone {
-                    font-size: 4rem;
-                }
-            }
+            .header-text(slogan);
 
             .sub-slogan {
                 padding: 4% 0;
@@ -67,15 +40,7 @@
         }
 
         img {
-            height: 500px;
-
-            @media @tablet {
-                height: 400px;
-            }
-
-            @media @phone {
-                height: 300px;
-            }
+            .header-img();
         }
     }
 }

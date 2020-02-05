@@ -454,3 +454,60 @@ footer .container .copyright p {
 .how .how-three {
   background-color: #B8CCC7;
 }
+.about-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-top .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4% 0;
+}
+@media (max-width: 800px) {
+  .about-top .container {
+    flex-direction: column-reverse;
+  }
+}
+.about-top .container .about-text {
+  text-align: right;
+  width: 50%;
+}
+@media (max-width: 1200px) {
+  .about-top .container .about-text {
+    padding: 0 4%;
+  }
+}
+.about-top .container .about-text .about-header-text {
+  display: inline;
+  font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .about-top .container .about-text .about-header-text {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
+.about-top .container .about-text h1 {
+  display: inline;
+  padding: 0 7px;
+}
+@media (max-width: 500px) {
+  .about-top .container .about-text h1 {
+    font-size: 4rem;
+  }
+}
+.about-top .container img {
+  height: 500px;
+}
+@media (max-width: 800px) {
+  .about-top .container img {
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .about-top .container img {
+    height: 300px;
+  }
+}
