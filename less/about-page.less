@@ -1,3 +1,4 @@
+// Header section
 .about-top {
     .flex(center, center);
 
@@ -12,6 +13,44 @@
 
         img {
             .header-img();
+        }
+    }
+}
+
+// Team profiles section
+.member-cards {
+    .flex(center, center);
+
+    .container {
+        .flex(space-between, center);
+        flex-wrap: wrap;
+        padding: 2% 0;
+
+        .card {
+            .flex(center, center);
+            flex-direction: column;
+            width: 30%;
+            text-align: center;
+            border-radius: 15px;
+            border: 3px solid black;
+            margin: 2% 0;
+            padding: 2%;
+
+            img {
+                border-radius: 50%;
+                height: 250px;
+                margin-bottom: 10%;
+            }
+
+            h3 {
+                background-color: white;
+                margin-bottom: 5%;
+                padding: 4% 0;
+                width: 75%;
+                font-size: 2.5rem;
+                border-radius: 20px;
+                border: 2px solid black;
+            }
         }
     }
 }
