@@ -419,7 +419,7 @@ footer .container .copyright p {
   }
 }
 .what .what-color {
-  background-color: #D9B9CD;
+  background-color: #C47846;
 }
 .what .what-color .color-content {
   flex-direction: row-reverse;
@@ -440,10 +440,10 @@ footer .container .copyright p {
   }
 }
 .how .how-one {
-  background-color: #C47846;
+  background-color: #A6A462;
 }
 .how .how-two {
-  background-color: #A6A462;
+  background-color: #DABECA;
 }
 .how .how-two .color-content {
   flex-direction: row-reverse;
@@ -454,7 +454,7 @@ footer .container .copyright p {
   }
 }
 .how .how-three {
-  background-color: #B8CCC7;
+  background-color: #5B848F;
 }
 .about-top {
   display: flex;
@@ -576,8 +576,7 @@ footer .container .copyright p {
 .member-cards .container .card h3 {
   background-color: white;
   margin-bottom: 5%;
-  padding: 4% 0;
-  width: 75%;
+  padding: 4% 10%;
   font-size: 2.5rem;
   border-radius: 20px;
   border: 2px solid black;
