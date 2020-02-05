@@ -1,0 +1,88 @@
+// Header section
+.about-top {
+    .flex(center, center);
+
+    .container {
+        .header-container();
+
+        .about-text {
+            text-align: right;
+            width: 50%;
+            .header-text(about-header-text);
+
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+            }
+
+            p:not(.about-header-text) {
+                font-size: 2rem;
+            }
+        }
+
+        img {
+            .header-img();
+        }
+    }
+}
+
+// Team profiles section
+.member-cards {
+    .flex(center, center);
+
+    .container {
+        .flex(space-between, center);
+        flex-wrap: wrap;
+        padding: 2% 0;
+
+        @media @small-tablet {
+            justify-content: center;
+        }
+
+        .card {
+            .flex(center, center);
+            flex-direction: column;
+            width: 30%;
+            text-align: center;
+            border-radius: 15px;
+            border: 3px solid black;
+            margin: 2% 0;
+            padding: 2%;
+
+            @media @large-tablet {
+                width: 46.5%;
+                margin: 3% 0;
+            }
+
+            @media @small-tablet {
+                width: 90%;
+                margin: 4% 0;
+            }
+
+            img {
+                border-radius: 50%;
+                height: 250px;
+                margin-bottom: 10%;
+
+                @media @phone {
+                    height: 225px;
+                    margin-top: 5%;
+                }
+            }
+
+            h3 {
+                background-color: white;
+                margin-bottom: 5%;
+                padding: 4% 10%;
+                font-size: 2.5rem;
+                border-radius: 20px;
+                border: 2px solid black;
+            }
+
+            p:nth-child(3) {
+                font-size: 2rem;
+                margin-bottom: 2%;
+            }
+        }
+    }
+}

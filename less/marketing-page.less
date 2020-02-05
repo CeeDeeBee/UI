@@ -1,5 +1,127 @@
 // Call to action
+.cta {
+    .flex(center, center);
 
-// Middle section 1
+    .container {
+        .header-container();
+        padding: 4% 0;
 
-// Middle section 2
+        .text {
+            text-align: center;
+            .header-text(slogan);
+
+            .sub-slogan {
+                padding: 4% 0;
+                margin-bottom: 6%;
+                font-size: 2.5rem;
+
+                @media @phone {
+                    font-size: 2rem;
+                }
+            }
+
+            .sign-up {
+                margin: 0 auto;
+                background-color: @dark-blue;
+                color: @gold;
+                width: 75%;
+                border-radius: 20px;
+                padding: 2%;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+                a {
+                    font-size: 2.5rem;
+                    color: @gold;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        img {
+            .header-img();
+        }
+    }
+}
+
+// For both middle sections
+.color-div {
+    .flex(center, center);
+    margin: 3% 0;
+    padding: 2% 0;
+
+    @media @phone {
+        margin: 6% 0;
+        padding: 4% 0;
+    }
+
+    .color-content {
+        .flex(space-between, center);
+
+        @media @phone {
+            flex-direction: column-reverse;
+        }
+
+        p {
+            width: 50%;
+            font-size: 2.2rem;
+            text-align: center;
+
+            @media @tablet {
+                width: 100%;
+                padding: 3% 0;
+            }
+        }
+
+        img {
+            height: 400px;
+        }
+    }
+}
+
+// What is droom section
+.what {
+    @media @tablet {
+        margin-top: 4%;
+    }
+
+    h2 {
+        .header-with-bg();
+    }
+
+    .what-color {
+        background-color: @brown;
+
+        .color-content {
+            .reversed-color-divs();
+        }
+    }
+}
+
+// How it works section
+.how {
+
+    h2 {
+        .header-with-bg();
+    }
+
+    .how-one {
+        background-color: @green;
+    }
+
+    .how-two {
+        background-color: @pink;
+
+        .color-content {
+            .reversed-color-divs();
+        }
+    }
+
+    .how-three {
+        background-color: @blue;
+    }
+}

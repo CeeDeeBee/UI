@@ -1,0 +1,32 @@
+nav {
+    .flex(center, center);
+    background-color: @dark-blue;
+
+    .container {
+        .flex(space-between, center);
+        padding: 1.5% 0;
+
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .links {
+            .flex(space-between, center);
+            width: 35%;
+
+            @media @tablet {
+                width: 50%;
+            }
+
+            @media @phone {
+                margin-top: 4%;
+                margin-bottom: 1%;
+                width: 100%;
+            }
+
+            a {
+                .links();
+            }
+        }
+    }
+}
