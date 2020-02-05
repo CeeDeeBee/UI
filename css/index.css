@@ -403,7 +403,7 @@ html {
   font-size: 5.5rem;
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  color: white;
+  color: #213159;
   margin-bottom: 4rem;
 }
 @media ( max-width: 500px ) {
@@ -632,7 +632,7 @@ html {
   }
 }
 .section-three .started {
-  color: #CAA767;
+  color: #213159;
   font-size: 5rem;
   font-family: 'Dancing Script', cursive;
 }
@@ -694,7 +694,7 @@ html {
   text-align: center;
   padding: 4%;
   line-height: 1.5;
-  color: white;
+  color: #CAA767;
   font-size: 4rem;
   font-family: 'Dancing Script', cursive;
 }
