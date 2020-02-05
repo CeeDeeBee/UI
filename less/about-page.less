@@ -9,6 +9,11 @@
             text-align: right;
             width: 50%;
             .header-text(about-header-text);
+
+            @media @tablet {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         img {
@@ -26,6 +31,10 @@
         flex-wrap: wrap;
         padding: 2% 0;
 
+        @media @small-tablet {
+            justify-content: center;
+        }
+
         .card {
             .flex(center, center);
             flex-direction: column;
@@ -36,10 +45,25 @@
             margin: 2% 0;
             padding: 2%;
 
+            @media @large-tablet {
+                width: 46.5%;
+                margin: 3% 0;
+            }
+
+            @media @small-tablet {
+                width: 90%;
+                margin: 4% 0;
+            }
+
             img {
                 border-radius: 50%;
                 height: 250px;
                 margin-bottom: 10%;
+
+                @media @phone {
+                    height: 225px;
+                    margin-top: 5%;
+                }
             }
 
             h3 {

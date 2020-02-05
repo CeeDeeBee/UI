@@ -499,6 +499,12 @@ footer .container .copyright p {
     font-size: 4rem;
   }
 }
+@media (max-width: 800px) {
+  .about-top .container .about-text {
+    width: 100%;
+    text-align: center;
+  }
+}
 .about-top .container img {
   height: 500px;
 }
@@ -524,6 +530,11 @@ footer .container .copyright p {
   flex-wrap: wrap;
   padding: 2% 0;
 }
+@media (max-width: 650px) {
+  .member-cards .container {
+    justify-content: center;
+  }
+}
 .member-cards .container .card {
   display: flex;
   justify-content: center;
@@ -536,10 +547,28 @@ footer .container .copyright p {
   margin: 2% 0;
   padding: 2%;
 }
+@media (max-width: 1200px) {
+  .member-cards .container .card {
+    width: 46.5%;
+    margin: 3% 0;
+  }
+}
+@media (max-width: 650px) {
+  .member-cards .container .card {
+    width: 90%;
+    margin: 4% 0;
+  }
+}
 .member-cards .container .card img {
   border-radius: 50%;
   height: 250px;
   margin-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .member-cards .container .card img {
+    height: 225px;
+    margin-top: 5%;
+  }
 }
 .member-cards .container .card h3 {
   background-color: white;
