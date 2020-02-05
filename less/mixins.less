@@ -9,3 +9,21 @@
     color: @gold;
     font-size: 2rem;
 }
+
+.header-with-bg() {
+    background-color: @dark-blue;
+    text-align: center;
+    padding: 2% 0;
+
+    @media @tablet {
+        padding: 3% 0;
+    }
+}
+
+.reversed-color-divs() {
+    flex-direction: row-reverse;
+
+    @media @phone {
+        flex-direction: column-reverse;
+    }
+}

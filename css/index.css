@@ -364,9 +364,67 @@ footer .container .copyright p {
     height: 300px;
   }
 }
+.color-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  .color-div {
+    margin: 6% 0;
+    padding: 4% 0;
+  }
+}
+.color-div .color-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .color-div .color-content {
+    flex-direction: column-reverse;
+  }
+}
+.color-div .color-content p {
+  width: 50%;
+  font-size: 2.2rem;
+  text-align: center;
+}
 @media (max-width: 800px) {
-  .how {
+  .color-div .color-content p {
+    width: 100%;
+    padding: 3% 0;
+  }
+}
+.color-div .color-content img {
+  height: 400px;
+}
+@media (max-width: 800px) {
+  .what {
     margin-top: 4%;
+  }
+}
+.what h2 {
+  background-color: #182D42;
+  text-align: center;
+  padding: 2% 0;
+}
+@media (max-width: 800px) {
+  .what h2 {
+    padding: 3% 0;
+  }
+}
+.what .what-color {
+  background-color: #D9B9CD;
+}
+.what .what-color .color-content {
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .what .what-color .color-content {
+    flex-direction: column-reverse;
   }
 }
 .how h2 {
@@ -385,46 +443,14 @@ footer .container .copyright p {
 .how .how-two {
   background-color: #A6A462;
 }
-.how .how-two .how-content {
+.how .how-two .color-content {
   flex-direction: row-reverse;
 }
-.how .how-three {
-  background-color: #B8CCC7;
-}
-.how .how-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3% 0;
-  padding: 2% 0;
-}
 @media (max-width: 500px) {
-  .how .how-div {
-    margin: 6% 0;
-    padding: 4% 0;
-  }
-}
-.how .how-div .how-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .how .how-div .how-content {
+  .how .how-two .color-content {
     flex-direction: column-reverse;
   }
 }
-.how .how-div .how-content p {
-  width: 50%;
-  font-size: 2.2rem;
-  text-align: center;
-}
-@media (max-width: 800px) {
-  .how .how-div .how-content p {
-    width: 100%;
-    padding: 3% 0;
-  }
-}
-.how .how-div .how-content img {
-  height: 400px;
+.how .how-three {
+  background-color: #B8CCC7;
 }
