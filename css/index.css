@@ -505,6 +505,9 @@ footer .container .copyright p {
     text-align: center;
   }
 }
+.about-top .container .about-text p:not(.about-header-text) {
+  font-size: 2rem;
+}
 .about-top .container img {
   height: 500px;
 }
@@ -578,4 +581,8 @@ footer .container .copyright p {
   font-size: 2.5rem;
   border-radius: 20px;
   border: 2px solid black;
+}
+.member-cards .container .card p:nth-child(3) {
+  font-size: 2rem;
+  margin-bottom: 2%;
 }
