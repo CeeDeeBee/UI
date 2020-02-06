@@ -187,6 +187,9 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #182D42;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav .container {
   display: flex;
@@ -303,6 +306,17 @@ footer .container .copyright p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 6%;
+}
+@media (max-width: 800px) {
+  .cta {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .cta {
+    margin-top: 25%;
+  }
 }
 .cta .container {
   display: flex;
@@ -480,6 +494,12 @@ footer .container .copyright p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .about-top {
+    margin-top: 15%;
+  }
 }
 .about-top .container {
   display: flex;
