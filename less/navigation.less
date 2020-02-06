@@ -4,10 +4,16 @@ nav {
 
     .container {
         .flex(space-between, center);
-        padding: 1.5% 0;
+        padding: 2% 0;
 
         @media @phone {
             flex-direction: column;
+        }
+
+        h2 {
+            a {
+                .a-reset();
+            }
         }
 
         .links {
@@ -26,6 +32,17 @@ nav {
 
             a {
                 .links();
+                // Hover styles
+                width: 30%;
+                text-align: center;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    border-top: 3px solid @gold;
+                    border-bottom: 3px solid @gold;
+                    padding: 3% 0;
+                    margin: -3% 0;
+                }
             }
         }
     }
