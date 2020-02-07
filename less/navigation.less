@@ -8,6 +8,7 @@ nav {
     .container {
         .flex(space-between, center);
         padding: 2% 0;
+        overflow: hidden;
 
         @media @phone {
             flex-direction: column;
@@ -21,10 +22,19 @@ nav {
 
         .links {
             .flex(space-between, center);
-            width: 35%;
+            width: 50%;
+            // Slide transition
+            transition: transform .5s;
+
+            @media @large-tablet {
+                width: 60%;
+            }
 
             @media @tablet {
                 width: 50%;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 2% 0;
             }
 
             @media @phone {
@@ -36,15 +46,58 @@ nav {
             a {
                 .links();
                 // Hover styles
-                width: 30%;
+                width: 20%;
                 text-align: center;
                 transition: all .2s ease-in-out;
 
+                @media @tablet {
+                    width: 30%;
+                    margin-bottom: 6%;
+                }
+
+                @media @phone {
+                    margin: 2% 0;
+                }
+
+                @media @desktop {
+                    &:hover:not(.sign-up-a) {
+                        border-top: 3px solid @gold;
+                        border-bottom: 3px solid @gold;
+                        padding: 3% 0;
+                        margin: -3% 0;
+                    }
+                }
+            }
+
+            .nav-sign-up {
+                background-color: @gold;
+                padding: 2% 8%;
+                width: 35%;
+                text-align: center;
+                border-radius: 20px;
+
+                @media @tablet {
+                    width: 50%;
+                    text-align: center;
+                }
+
+                @media @phone {
+                    display: none;
+                }
+
                 &:hover {
-                    border-top: 3px solid @gold;
-                    border-bottom: 3px solid @gold;
-                    padding: 3% 0;
-                    margin: -3% 0;
+                    cursor: pointer;
+                    background-color: @dark-blue;
+                    border: 2px solid @gold;
+                    margin: -2px 0 -2px;
+
+                    a {
+                        color: @gold;
+                    }
+                }
+
+                a {
+                    color: @dark-blue;
                 }
             }
         }

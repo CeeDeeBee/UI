@@ -196,6 +196,7 @@ nav .container {
   justify-content: space-between;
   align-items: center;
   padding: 2% 0;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   nav .container {
@@ -210,11 +211,20 @@ nav .container .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 50%;
+  transition: transform 0.5s;
+}
+@media (max-width: 1200px) {
+  nav .container .links {
+    width: 60%;
+  }
 }
 @media (max-width: 800px) {
   nav .container .links {
     width: 50%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2% 0;
   }
 }
 @media (max-width: 500px) {
@@ -228,15 +238,58 @@ nav .container .links a {
   text-decoration: none;
   color: #CAA767;
   font-size: 2rem;
-  width: 30%;
+  width: 20%;
   text-align: center;
   transition: all 0.2s ease-in-out;
 }
-nav .container .links a:hover {
-  border-top: 3px solid #CAA767;
-  border-bottom: 3px solid #CAA767;
-  padding: 3% 0;
-  margin: -3% 0;
+@media (max-width: 800px) {
+  nav .container .links a {
+    width: 30%;
+    margin-bottom: 6%;
+  }
+}
+@media (max-width: 500px) {
+  nav .container .links a {
+    margin: 2% 0;
+  }
+}
+@media (min-width: 1200px) {
+  nav .container .links a:hover:not(.sign-up-a) {
+    border-top: 3px solid #CAA767;
+    border-bottom: 3px solid #CAA767;
+    padding: 3% 0;
+    margin: -3% 0;
+  }
+}
+nav .container .links .nav-sign-up {
+  background-color: #CAA767;
+  padding: 2% 8%;
+  width: 35%;
+  text-align: center;
+  border-radius: 20px;
+}
+@media (max-width: 800px) {
+  nav .container .links .nav-sign-up {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  nav .container .links .nav-sign-up {
+    display: none;
+  }
+}
+nav .container .links .nav-sign-up:hover {
+  cursor: pointer;
+  background-color: #182D42;
+  border: 2px solid #CAA767;
+  margin: -2px 0 -2px;
+}
+nav .container .links .nav-sign-up:hover a {
+  color: #CAA767;
+}
+nav .container .links .nav-sign-up a {
+  color: #182D42;
 }
 footer {
   display: flex;
@@ -310,12 +363,12 @@ footer .container .copyright p {
 }
 @media (max-width: 800px) {
   .cta {
-    margin-top: 10%;
+    margin-top: 17%;
   }
 }
 @media (max-width: 500px) {
   .cta {
-    margin-top: 25%;
+    margin-top: 30%;
   }
 }
 .cta .container {
@@ -495,6 +548,11 @@ footer .container .copyright p {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
+}
+@media (max-width: 800px) {
+  .about-top {
+    margin-top: 10%;
+  }
 }
 @media (max-width: 500px) {
   .about-top {
